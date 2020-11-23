@@ -146,7 +146,7 @@ function gameOver(square) {
 
     setTimeout(() => {
         if (confirm('You lost. Press ok to restart.')){
-            window.location = '/'
+            window.location = '/minesweeper/'
         }
         return
     }, 100);
@@ -163,7 +163,7 @@ function checkForWin() {
         if (matches === bombCount) {
             isGameOver = true
             if (confirm('You won. Press ok to restart.')){
-                window.location = '/'
+                window.location = '/minesweeper/'
             }
             return
         }
